@@ -8,10 +8,10 @@ csrf = SeaSurf(app)
 from flask.ext.github import GitHub
 
 # config application
-app.config['GITHUB_CLIENT_ID'] = 'XXX'
-app.config['GITHUB_CLIENT_SECRET'] = 'YYY'
-app_secret = 'ZZZ'
-github_callback_url = "0.0.0.0:5000/github-callback"
+app.config['GITHUB_CLIENT_ID'] = '5f27a275b15918f1233e'
+app.config['GITHUB_CLIENT_SECRET'] = 'f11d899f97faf6cf3780667470501928ad0cd946'
+app_secret = 'SECRET'
+github_callback_url = "http://localhost:5000/github-callback"
 github = GitHub(app)
 
 # setup sqlalchemy
@@ -148,8 +148,9 @@ def deleteItem(item_id):
 def loginUser():
     """user Login"""
     # send user back to the source page
-    uri = github_callback_url + "?next=" + request.referrer
-    return github.authorize(redirect_uri=uri)
+    # uri = github_callback_url + "?next=" + request.referrer
+    return github.authorize(redirect_uri=github_callback_url)
+    # return github.authorize()
 
 
 @app.route('/logout')

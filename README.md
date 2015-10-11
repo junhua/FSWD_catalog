@@ -8,10 +8,10 @@ pip install -r req.txt
 ```
 
 * python
-* [flask](http://flask.pocoo.org) 
-* [sqlalchemy](http://www.sqlalchemy.org)
-* [SeaSurf](https://flask-seasurf.readthedocs.org)
-* [GitHub-Flask](https://github-flask.readthedocs.org/en/latest/)
+* [flask v0.10.1](http://flask.pocoo.org) 
+* [sqlalchemy v2.0](http://www.sqlalchemy.org)
+* [SeaSurf v0.2.1](https://flask-seasurf.readthedocs.org)
+* [GitHub-Flask v3.0.1](https://github-flask.readthedocs.org/en/latest/)
 
 ##Setup
 for GitHub OAuth the Client ID and Client Secret have to be changed in application.py: 
@@ -41,3 +41,18 @@ start application
 ```bash
 python application.py
 ```
+
+##JSon endpoints
+[GET]
+* /
+* /catalog/
+* /catalog/<category_name>/
+* /item/<item_id>/
+* /login
+* /logout
+* /github-callback
+
+[POST]
+* /catalog/<category_name>/add/
+* /item/<item_id>/edit/
+* /item/<item_id>/delete/

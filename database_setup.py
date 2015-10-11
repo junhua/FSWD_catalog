@@ -26,7 +26,7 @@ class User(Base):
 class Category(Base):
     __tablename__ = 'Categories'
 
-    name = Column(String(255), nullable=False)
+    name = Column(String(255), nullable=False, unique=True)
     id = Column(Integer, primary_key=True)
 
 """Item class"""
