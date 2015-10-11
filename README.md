@@ -46,13 +46,13 @@ python application.py
 [GET]
 * /
 * /catalog/
-* /catalog/<category_name>/
-* /item/<item_id>/
+* /catalog/\<category_name\>/
+* /item/\<item_id\>/
 * /login
 * /logout
 * /github-callback
 
 [POST]
-* /catalog/<category_name>/add/
-* /item/<item_id>/edit/
-* /item/<item_id>/delete/
+* /catalog/\<category_name\>/add/
+* /item/\<item_id\>/edit/
+* /item/\<item_id\>/delete/
