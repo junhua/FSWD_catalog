@@ -42,7 +42,7 @@ start application
 python application.py
 ```
 
-##JSon endpoints
+##JSON endpoints
 [GET]
 * /
 * /catalog/
